@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
   </head> 
+  <style>
+    a:hover {
+      background-color: darkorange;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="height:120px;">
       <div class="container">
@@ -46,21 +51,172 @@
               <a class="nav-link" href="./contact.html" style="font-size: 20px;">CONTACT</a>
             </li>
             <li class="nav-item" style="padding-left:30px;">
-              <a class="nav-link" href="todos.html" style="font-size: 20px;background-color:darkorange;">TODOS</a>
+              <a class="nav-link" href="todos.html" style="font-size: 20px; background-color:darkorange;">TODOS</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <main style="margin-top: 150px">
-      <!-- Quality Photo -->
-      <div class="container">
-        <h1>Selamat datang di halaman Todos</h1>
+    <main style="margin-top: 150px; margin-bottom: 100px;">
+      <div class="auto">
+        <img src="https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-elina-araja-1743227-3377405.jpg&fm=jpg"
+        style="height: 150px; width:100%; margin-top:-30px; object-fit: cover"/>
+        <div style="margin-top:-100px; margin-left:100px;">
+          <a style="padding-left: 20px; padding-right: 75px; padding-top: 10px; padding-bottom: 10px; color: yellow;font-size: 32px;background-color:rgb(48, 47, 47)"><b>Todos</b></a>
+        </div>        
       </div>
-      <!-- End of Quality Photo -->
+      <section class="container my-4">
+        <!-- Top -->
+        <div class="card py-4" style="margin-top: 80px;">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col">
+                    <img src="https://stickershop.line-scdn.net/stickershop/v1/product/21619817/LINEStorePC/main.png?v=1"/ height="200px">
+                  </div>
+                  <div class="col text-start">
+                    <h4>Gino Sunarto</h4>
+                    <p>Android Developer</p>
+                    <div class="row">
+                      <div class="col">
+                        <button type="button" class="btn btn-primary">
+                          Primary
+                        </button>
+                      </div>
+                      <div class="col">
+                        <button type="button" class="btn btn-outline-success">
+                          Primary
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col">
+                <div class="row">
+                  <div class="col hstack">
+                    <div class="vr"></div>
+                  </div>
+  
+                  <div class="col-11">
+                    <div class="row">
+                      <div class="col">
+                        <div class="row text-start">
+                          <p class="fw-bold">Availability</p>
+                          <p class="fw-bold">Usia</p>
+                          <p class="fw-bold">Lokasi</p>
+                          <p class="fw-bold">Pengalaman</p>
+                          <p class="fw-bold">Email</p>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="row text-start">
+                          <p>Full Time</p>
+                          <p>12</p>
+                          <p>Garut</p>
+                          <p>4 Tahun</p>
+                          <p>gino@testing.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of Top -->
+  
+        <!-- Bottom -->
+        <div class="card py-4 mt-5">
+          <div class="mb-3 mx-4">
+            <label for="inputName" class="form-label fw-bold">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Your name"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <label for="inputRole" class="form-label fw-bold">Role</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputRole"
+              placeholder="Your role"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <label for="inputAvailability" class="form-label fw-bold"
+              >Availability</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="inputAvailability"
+              placeholder="Your availability"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <label for="inputUsia" class="form-label fw-bold">Usia</label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputAvailability"
+              placeholder="Your age"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <label for="inputLokasi" class="form-label fw-bold">Lokasi</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputLokasi"
+              placeholder="Your location"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <label for="inputExperience" class="form-label fw-bold"
+              >Year Experience</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputExperience"
+              placeholder="Your experience"
+            />
+          </div>
+          <div class="mb-3 mx-4">
+            <label for="inputEmail" class="form-label fw-bold">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Your email"
+            />
+          </div>
+  
+          <div class="mb-3 mx-4">
+            <input type="submit" class="form-control btn btn-primary" />
+          </div>
+        </div>
+        <!-- End of Bottom -->
+      </section>
     </main>
    
-    <footer></footer>
+    <footer style="margin-top: 100px; bottom: 0; position: fixed; height: 50px; width:100%;">
+      <img src="https://t3.ftcdn.net/jpg/05/00/76/76/360_F_500767676_mZzz2hyDsFsiZksszm6dSfgHX6cI3M9T.jpg"
+      style="height: 50px; width:100%; object-fit: cover"/>
+      <p style="text-align: center; margin-top: -40px; color: white;"><b>@Powered by Gino Sunarto</b></p>
+    </footer>
 
     <script src="./index.js"></script>
     <script
