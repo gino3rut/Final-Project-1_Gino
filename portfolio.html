@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
   </head> 
+  <style>
+    a:hover {
+      background-color: darkorange;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="height:120px;">
       <div class="container">
@@ -52,17 +57,29 @@
         </div>
       </div>
     </nav>
-    <main style="margin-top: 150px">
-      <!-- Quality Photo -->
-      <div class="container">
-        <h1>Selamat datang di halaman Portofolio</h1>
+    <main style="margin-top: 150px; margin-bottom: 100px;">
+      <div class="auto">
+        <img src="https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-elina-araja-1743227-3377405.jpg&fm=jpg"
+        style="height: 150px; width:100%; margin-top:-30px; object-fit: cover"/>
+        <div style="margin-top:-100px; margin-left:100px;">
+          <a style="padding-left: 20px; padding-right: 75px; padding-top: 10px; padding-bottom: 10px; color: yellow;font-size: 32px;background-color:rgb(48, 47, 47)"><b>Portofolio</b></a>
+        </div>        
       </div>
-      <!-- End of Quality Photo -->
+      <div class="auto" style="margin-top: 60px;margin-left: 10px; margin-right: 10px;">
+        <button id="but1" class="btn button" style="font-size: 25px;background: yellow;" onclick="show_all()">All</button>
+        <button id="but2" class="btn button" style="font-size: 25px;" onclick="show_opsi1()">Classic</button>
+        <button id="but3" class="btn button" style="font-size: 25px;" onclick="show_opsi2()">Dark</button>
+        <div id="konten-holder" class="row mt-3"></div>
+      </div>
     </main>
    
-    <footer></footer>
+    <footer style="margin-top: 100px; bottom: 0; position: fixed; height: 50px; width:100%;">
+      <img src="https://t3.ftcdn.net/jpg/05/00/76/76/360_F_500767676_mZzz2hyDsFsiZksszm6dSfgHX6cI3M9T.jpg"
+      style="height: 50px; width:100%; object-fit: cover"/>
+      <p style="text-align: center; margin-top: -40px; color: white;"><b>@Powered by Gino Sunarto</b></p>
+    </footer>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
