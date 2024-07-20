@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
   </head> 
+  <style>
+    a:hover {
+      background-color: darkorange;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary" style="height:120px;">
       <div class="container">
@@ -43,7 +48,7 @@
               <a class="nav-link" href="./about.html" style="font-size: 20px;">ABOUT US</a>
             </li>
             <li class="nav-item" style="padding-left:30px;">
-              <a class="nav-link" href="./contact.html" style="font-size: 20px;background-color:darkorange;">CONTACT</a>
+              <a class="nav-link" href="./contact.html" style="font-size: 20px; background-color:darkorange;">CONTACT</a>
             </li>
             <li class="nav-item" style="padding-left:30px;">
               <a class="nav-link" href="todos.html" style="font-size: 20px;">TODOS</a>
@@ -52,15 +57,63 @@
         </div>
       </div>
     </nav>
-    <main style="margin-top: 150px">
-      <!-- Quality Photo -->
-      <div class="container">
-        <h1>Selamat datang di halaman Contact</h1>
+    <main style="margin-top: 150px; margin-bottom: 100px;">
+      <div class="auto">
+        <img src="https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?cs=srgb&dl=pexels-elina-araja-1743227-3377405.jpg&fm=jpg"
+        style="height: 150px; width:100%; margin-top:-30px; object-fit: cover"/>
+        <div style="margin-top:-100px; margin-left:100px;">
+          <a style="padding-left: 20px; padding-right: 75px; padding-top: 10px; padding-bottom: 10px; color: yellow;font-size: 32px;background-color:rgb(48, 47, 47)"><b>Contact</b></a>
+        </div>  
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31736.462562042972!2d106.81979046612715!3d-6.122920836292677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e17cf58f74f%3A0x504262ac57884abe!2sAncol%2C%20Kec.%20Pademangan%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1721490693566!5m2!1sid!2sid" 
+          style="margin-top:60px" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>      
+        <section class="container">
+          <div class="card py-4" style="margin-top: 50px;">
+            <div class="container">
+              <div class="row">
+                <div class="col" style="margin-left: 10px;">
+                    <a style="width: 200px;padding: 10px; color: yellow;font-size: 22px;background-color:rgb(48, 47, 47)">Send Us Message</a>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" style="margin-top: 20px;"/>
+                    <input type="text" class="form-control" id="inputName" placeholder="Email" style="margin-top: 10px;"/>
+                    <input type="text" class="form-control" id="inputName" placeholder="Subject" style="margin-top: 10px;"/>
+                    <input type="text" class="form-control" id="inputName" placeholder="Message..." style="margin-top: 10px; height: 200px;text-align: unset;"/>
+                    <button type="button" class="btn btn-primary" style="margin-top: 10px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">Send Message</button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Info.!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body" style="color: black;">
+                            <h6 class="modal-title" id="exampleModalLabel" style="color: black;">Your Mail Sent Successfully.!</h6>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>    
+                <div class="col" style="margin-right: 10px;">
+                  <a style="width: 200px;padding: 10px; color: yellow;font-size: 22px;background-color:rgb(48, 47, 47)">Contact Us</a>
+                  <p style="margin-top:20px"><b>Maps : </b>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh</p>
+                  <p style="margin-top:20px"><b>Contact : </b>+1 800 258 2689 / +1 800 258 2689</p>
+                  <p style="margin-top:20px"><b>Email : </b>test@yahoo.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <!-- End of Quality Photo -->
     </main>
    
-    <footer></footer>
+    <footer style="margin-top: 100px; bottom: 0; position: fixed; height: 50px; width:100%;">
+      <img src="https://t3.ftcdn.net/jpg/05/00/76/76/360_F_500767676_mZzz2hyDsFsiZksszm6dSfgHX6cI3M9T.jpg"
+      style="height: 50px; width:100%; object-fit: cover"/>
+      <p style="text-align: center; margin-top: -40px; color: white;"><b>@Powered by Gino Sunarto</b></p>
+    </footer>
 
     <script src="./index.js"></script>
     <script
